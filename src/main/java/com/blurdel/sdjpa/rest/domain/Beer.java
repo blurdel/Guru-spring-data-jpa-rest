@@ -32,6 +32,7 @@ public class Beer {
     @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
     private UUID id;
 
+    // NOTE: ETag value is found in the REST Header for a single fetched Beer (not the payload)
     @Version
     private Long version;
 
